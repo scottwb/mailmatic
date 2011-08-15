@@ -10,3 +10,4 @@ pkg
 .\#*
 *.swp
 .rvmrc
+.sass-cache
