@@ -1,0 +1,12 @@
+coverage
+rdoc
+doc
+.yardoc
+.bundle
+pkg
+.DS_Store
+*~
+\#*
+.\#*
+*.swp
+.rvmrc

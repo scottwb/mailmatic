@@ -1,0 +1,39 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    css_parser (1.1.9)
+    diff-lcs (1.1.2)
+    git (1.2.5)
+    haml (3.1.2)
+    htmlentities (4.3.0)
+    jeweler (1.6.4)
+      bundler (~> 1.0)
+      git (>= 1.2.5)
+      rake
+    premailer (1.7.1)
+      css_parser (>= 1.1.9)
+      htmlentities (>= 4.0.0)
+    rake (0.8.7)
+    rcov (0.9.10)
+    rspec (2.3.0)
+      rspec-core (~> 2.3.0)
+      rspec-expectations (~> 2.3.0)
+      rspec-mocks (~> 2.3.0)
+    rspec-core (2.3.1)
+    rspec-expectations (2.3.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.3.0)
+    sass (3.1.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.0.0)
+  haml
+  jeweler (~> 1.6.4)
+  premailer
+  rake (= 0.8.7)
+  rcov
+  rspec (~> 2.3.0)
+  sass
