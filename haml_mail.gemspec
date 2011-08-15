@@ -4,14 +4,16 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{haml-mail}
+  s.name = %q{haml_mail}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott W. Bradley"]
   s.date = %q{2011-08-15}
+  s.default_executable = %q{haml_mail}
   s.description = %q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
   s.email = %q{scottwb@gmail.com}
+  s.executables = ["haml_mail"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -25,11 +27,13 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/haml-mail.rb",
-    "spec/haml-mail_spec.rb",
+    "bin/haml_mail",
+    "haml_mail.gemspec",
+    "lib/haml_mail.rb",
+    "spec/haml_mail_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/scottwb/haml-mail}
+  s.homepage = %q{http://github.com/scottwb/haml_mail}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
