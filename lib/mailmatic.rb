@@ -29,6 +29,17 @@ module MailMatic
         f << premailer.to_inline_css
       end
       puts "created #{outfile}"
+
+      if premailer.warnings.any?
+        puts
+        puts "WARNING: #{outfile}"
+        puts "-" * 79
+        premailer.warnings.each do |w|
+          puts "  [#{w[:level]}] #{w[:message]} may not render properly in #{w[:clients]}"
+        end
+        puts
+      end
+
       return 0
     rescue Exception => e
       puts "failed to create #{outfile}"
