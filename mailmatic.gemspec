@@ -4,16 +4,16 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{haml_mail}
+  s.name = %q{mailmatic}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott W. Bradley"]
   s.date = %q{2011-08-15}
-  s.default_executable = %q{haml_mail}
-  s.description = %q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
+  s.default_executable = %q{mailmatic}
+  s.description = %q{StaticMatic + Premailer: Generate HTML emails with inlined styles from Haml and Sass.}
   s.email = %q{scottwb@gmail.com}
-  s.executables = ["haml_mail"]
+  s.executables = ["mailmatic"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -27,17 +27,17 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "bin/haml_mail",
-    "haml_mail.gemspec",
-    "lib/haml_mail.rb",
-    "spec/haml_mail_spec.rb",
+    "bin/mailmatic",
+    "mailmatic.gemspec",
+    "lib/mailmatic.rb",
+    "spec/mailmatic_spec.rb",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/scottwb/haml_mail}
+  s.homepage = %q{http://github.com/scottwb/mailmatic}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
+  s.summary = %q{StaticMatic + Premailer: Generate HTML emails with inlined styles from Haml and Sass.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

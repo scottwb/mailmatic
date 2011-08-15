@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'premailer'
 
-module HamlMail
+module MailMatic
   class Generator
     STATICMATIC_SETUP_COMMAND = "staticmatic setup \"%s\""
     STATICMATIC_BUILD_COMMAND = "staticmatic build \"%s\""
@@ -97,14 +97,14 @@ module HamlMail
       case command
       when 'setup'
         args.each do |arg|
-          status = HamlMail::Generator.new(arg).setup
+          status = MailMatic::Generator.new(arg).setup
           return status if status != 0
         end
         return 0
 
       when 'build'
         args.each do |arg|
-          status = HamlMail::Generator.new(arg).build
+          status = MailMatic::Generator.new(arg).build
           return status if status != 0
         end
         return 0

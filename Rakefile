@@ -14,11 +14,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "haml_mail"
-  gem.homepage = "http://github.com/scottwb/haml_mail"
+  gem.name = "mailmatic"
+  gem.homepage = "http://github.com/scottwb/mailmatic"
   gem.license = "MIT"
-  gem.summary = %Q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
-  gem.description = %Q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
+  gem.summary = %Q{StaticMatic + Premailer: Generate HTML emails with inlined styles from Haml and Sass.}
+  gem.description = %Q{StaticMatic + Premailer: Generate HTML emails with inlined styles from Haml and Sass.}
   gem.email = "scottwb@gmail.com"
   gem.authors = ["Scott W. Bradley"]
   # dependencies defined in Gemfile
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "haml_mail #{version}"
+  rdoc.title = "MailMatic #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

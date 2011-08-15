@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
-require 'haml_mail'
-exit HamlMail::Application.run!(*ARGV)
+require 'mailmatic'
+exit MailMatic::Application.run!(*ARGV)
