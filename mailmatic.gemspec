@@ -28,8 +28,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/mailmatic",
-    "mailmatic.gemspec",
     "lib/mailmatic.rb",
+    "mailmatic.gemspec",
     "spec/mailmatic_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -45,7 +45,9 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<haml>, [">= 0"])
       s.add_runtime_dependency(%q<sass>, [">= 0"])
+      s.add_runtime_dependency(%q<staticmatic>, [">= 0"])
       s.add_runtime_dependency(%q<premailer>, [">= 0"])
+      s.add_runtime_dependency(%q<nokogiri>, [">= 0"])
       s.add_development_dependency(%q<rake>, ["= 0.8.7"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
@@ -54,7 +56,9 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<haml>, [">= 0"])
       s.add_dependency(%q<sass>, [">= 0"])
+      s.add_dependency(%q<staticmatic>, [">= 0"])
       s.add_dependency(%q<premailer>, [">= 0"])
+      s.add_dependency(%q<nokogiri>, [">= 0"])
       s.add_dependency(%q<rake>, ["= 0.8.7"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
@@ -64,7 +68,9 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<haml>, [">= 0"])
     s.add_dependency(%q<sass>, [">= 0"])
+    s.add_dependency(%q<staticmatic>, [">= 0"])
     s.add_dependency(%q<premailer>, [">= 0"])
+    s.add_dependency(%q<nokogiri>, [">= 0"])
     s.add_dependency(%q<rake>, ["= 0.8.7"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
