@@ -1,6 +1,29 @@
 = MailMatic
 
-Description goes here.
+MailMatic is a mashup of tools designed to help you create self-contained HTML emails, with inlined styles. It uses StaticMatic[https://github.com/staticmatic/staticmatic] to let you develop your emails using Haml[http://haml-lang.com/], Sass[http://sass-lang.com/], and Compass[http://compass-style.org/]. It then uses Premailer[https://github.com/alexdunae/premailer] to convert your generated HTML into HTML without external stylesheets, where all the style information is inlined as HTML attributes. This is critical for creating HTML emails that work well.
+
+== Installation
+
+Install the gem: 
+
+    gem install mailmatic
+
+Initialize a directory where you will manage your static emails, e.g.:
+
+    mailmatic setup my_emails_dir
+
+This generates a StaticMatic project directory structure. You can now edit your layouts, pages, and stylesheets under the `src` directory. You create new emails by creating documents under the `pages` directory. You can make subdirectories under here, and you can create partials that start with an underscore.
+
+NOTE: All of your Haml files should be named `filename.haml`, NOT `filename.html.haml`.
+
+For information on the use of partials, layouts, and helpers, see StaticMatic's documentation at http://staticmatic.rubyforge.org/how_to_use.html
+
+Once you are ready to generate the emails, run:
+
+    mailmatic build my_emails_dir
+
+Then, you will see all of your generated emails in the `my_emails_dir/emails` directory.
+
 
 == Contributing to MailMatic
  
