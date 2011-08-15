@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "haml-mail"
-  gem.homepage = "http://github.com/scottwb/haml-mail"
+  gem.name = "haml_mail"
+  gem.homepage = "http://github.com/scottwb/haml_mail"
   gem.license = "MIT"
   gem.summary = %Q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
   gem.description = %Q{Simple tool for generating self-contained HTML emails, with inlined styles, from Haml and Sass.}
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "haml-mail #{version}"
+  rdoc.title = "haml_mail #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
