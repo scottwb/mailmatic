@@ -2,7 +2,9 @@ source 'http://rubygems.org'
 
 gem 'haml'
 gem 'sass'
+gem 'staticmatic'
 gem 'premailer'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'rake', '0.8.7'
